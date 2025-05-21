@@ -1,0 +1,13 @@
+# service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: diploma-app
+  namespace: app
+spec:
+  selector:
+    app: diploma-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
