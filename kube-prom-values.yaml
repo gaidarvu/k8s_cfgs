@@ -4,7 +4,7 @@ grafana:
 
   grafana.ini:
     server:
-      root_url: "http://158.160.185.27/grafana/"
+      root_url: "http://<balancer_ip>/grafana/"
       serve_from_sub_path: true
 
   ingress:
